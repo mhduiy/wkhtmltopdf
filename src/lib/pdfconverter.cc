@@ -1068,7 +1068,7 @@ void PdfConverterPrivate::printDocument() {
 	conversionDone = true;
 	emit out.finished(true);
 
-	qApp->exit(0); // quit qt's event handling
+    // qApp->exit(0); // quit qt's event handling  ;; prohibit exit
 }
 
 #ifdef __EXTENSIVE_WKHTMLTOPDF_QT_HACK__
